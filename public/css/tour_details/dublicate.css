@@ -1,0 +1,201 @@
+
+
+body {
+  /*background: black;*/
+}
+
+
+
+blockquote p {
+  font-size: 0.5vmin;
+  /*color: #9e3a3a;*/
+}
+
+.container {
+  min-height: 100%; !important;
+  heigth: 100%;
+}
+
+.container .nav-bar {
+  width: 100%;
+  padding: 0.85vmin 0;
+  position: absolute;
+  /*background: red;*/
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+}
+
+.container .nav-bar .menu-items {
+  float: right;
+  color: black;
+  position: relative;
+  top: 50%;
+  margin-right: 2vmin;
+}
+
+.container .nav-bar .menu-items ul {
+  list-style: none;
+  margin: auto;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+}
+
+.container .nav-bar .menu-items ul li {
+  float: left;
+  font-size: 2vmin;
+  margin-left: 3vmin;
+  padding: 1vmin 0;
+}
+
+.container .nav-bar .logo {
+  display: inline-block;
+  position: relative;
+  margin-left: 8vmin;
+  float: left;
+}
+
+.container .nav-bar .logo .name {
+  font-family: Fredoka_one;
+  font-size: 4vmin;
+  color: white;
+}
+
+
+
+
+
+.parralax {
+  height: 110vmin;
+  width: 100%;
+  background-image: url('../../img/tour_details/img22.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.parralax-layer {
+  width: 30vmax; !important;
+  /*height: 100;*/
+  text-align: center;
+  color: white;
+
+
+}
+
+.parralax-layer button {
+  color: white;
+  background-color: #ee6c59;
+  width: auto;
+  border-radius: 6px;
+  border: #ee6c59;
+  font-size: 15px;
+  padding: 1.85vmin;
+  line-height: 20px;
+  transition: all .3s;
+}
+
+.parralax-layer button a {
+    text-decoration: none;
+    list-style-type: armenian;
+
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15vmin;
+}
+
+.content {
+  position: relative;
+  width: calc(25% - 5px);
+
+
+
+}
+
+.content .details:hover p {
+  height: 100px;
+  overflow-y: scroll;
+
+
+}
+
+.bgImg {
+  height: 250px;
+  width: 100%;
+  background-image: url('../../img/tour_details/img2.jpg');
+}
+
+.details {
+  padding: 0.85vmin;
+  position: absolute;
+    transition: .3s;
+    width: 90%;
+    margin: auto;
+    background: rgba(208, 192, 192, 0.3);
+    border: 1px solid #ccc;
+    left: 0;
+    right: 0;
+    bottom: -50px;
+
+
+
+    /*z-index:0;
+     -webkit-transform: translateZ( 0 );
+     transform: translateZ( 0 );
+     -webkit-transition: -webkit-transform 0.6s ease-in-out;
+     transition: transform 0.6s ease-in-out;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;*/
+}
+
+.details p {
+  transition: height .3s ease-in-out;
+  color: #4B4345;
+  font-size: 12px;
+  margin: 5px auto;
+  height: 50px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+
+
+
+/*a[ id = "content" ]:target ~ #content .details{
+    -webkit-transform: translateY( -500px );
+    transform: translateY( -500px );
+}*/
+
+
+
+
+/*content */
+
+#section-id {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /*align-content: center;*/
+  width: 70vmax;
+  padding: 0.85vmin;
+  margin: auto;
+  /*background: ;*/
+}
+
+.aside-with-text {
+  /*width: 90vmax;*/
+}
+
+.texts {
+  padding: 2vmin;
+  text-align: center;
+  border-bottom: 1px solid #dcdcdc;
+}
+.fas  {
+  color: #464646;
+}

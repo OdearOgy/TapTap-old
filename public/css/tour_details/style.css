@@ -1,0 +1,180 @@
+blockquote p {
+  font-size: 0.5vmin;
+  color: #9e3a3a;
+}
+
+
+/*nav bar*/
+.container {
+  min-height: 100%; !important;
+  height: 100%;
+}
+
+.container .nav-bar {
+  width: 100%;
+  padding: 1.85vmin 0;
+  position: absolute;
+}
+
+.container .nav-bar .menu-items {
+  float: right;
+  color: black;
+  position: relative;
+  top: 50%;
+  margin-right: 8vmin;
+}
+
+.container .nav-bar .menu-items ul {
+  list-style: none;
+  margin: auto;
+  /*display: flex;*/
+  /*justify-content: space-between;*/
+}
+
+.container .nav-bar .menu-items ul li {
+  float: left;
+  font-size: 2.45vmin;
+  margin-left: 3vmin;
+  padding: 0.82vmin 0;
+  -webkit-text-stroke: 0.5px white;
+     color: white;
+     text-shadow:
+           -0.1vmin -0.1vmin 0 #000,
+           0.1vmin -0.1vmin 0 #000,
+           -0.1vmin 0.1vmin 0 #000,
+            0.1vmin 0.1vmin 0 #000;
+}
+
+.container .nav-bar .menu-items ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .nav-bar .menu-items ul li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.container .nav-bar .logo {
+  display: inline-block;
+  position: relative;
+  margin-left: 8vmin;
+  float: left;
+}
+
+.container .nav-bar .logo .name {
+  font-family: Fredoka_one;
+  font-size: 4vmin;
+  -webkit-text-stroke: -0.5vmin white;
+  text-shadow:
+        -0.1vmin -0.1vmin 0 #000,
+        0.1vmin -0.1vmin 0 #000,
+        -0.1vmin 0.1vmin 0 #000,
+         0.1vmin 0.1vmin 0 #000;
+
+}
+
+.container .nav-bar .logo .name a {
+  font-family: Fredoka_one;
+  color: white;
+  text-decoration: none;
+  -webkit-text-stroke: -0.5vmin white;
+  text-shadow:
+        -0.1vmin -0.1vmin 0 #000,
+        0.1vmin -0.1vmin 0 #000,
+        -0.1vmin 0.1vmin 0 #000,
+         0.1vmin 0.1vmin 0 #000;
+}
+
+/*background photo, parallax*/
+.parallax {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.parallax .parallax-layer {
+  width: 30vmax; !important;
+  text-align: center;
+  color: white;
+  font-size: 2.6vmin;
+  display: block;
+  text-shadow:
+        -0.1vmin -0.1vmin 0 #000,
+        0.1vmin -0.1vmin 0 #000,
+        -0.1vmin 0.1vmin 0 #000,
+         0.1vmin 0.1vmin 0 #000;
+
+}
+
+.parallax .parallax-layer h1{
+  font-family: Fredoka_one;
+  text-shadow:
+        -0.1vmin -0.1vmin 0 #000,
+        0.1vmin -0.1vmin 0 #000,
+        -0.1vmin 0.1vmin 0 #000,
+         0.1vmin 0.1vmin 0 #000;
+}
+
+.parallax .parallax-layer button {
+  color: white;
+  background-color: #ee6c59;
+  width: auto;
+  border-radius: 6px;
+  border: #ee6c59;
+  font-size: 2.2vmin;
+  padding: 1.5vmin 3.75vmin;
+  margin-top: 0.5vmin;
+  line-height: 20px;
+  transition: all .3s;
+
+}
+
+
+/*content */
+#section-id {
+  display: flex;
+  justify-content: center;
+  width: 70vmax;
+  padding: 0.85vmin;
+  margin: auto;
+  font-size: 2.6vmin;
+}
+
+#section-id .aside-with-text {
+  width: 100vw;
+}
+
+#section-id .aside-with-text .aside-div .texts {
+  padding: 2vmin;
+  text-align: justify;
+  border-bottom: 1px solid #dcdcdc;
+  font-family: arial; !important
+
+}
+
+#section-id .aside-with-text .aside-div .texts h3 {
+  text-align: center;
+  padding: 1vmin 0;
+}
+#section-id .aside-with-text .aside-div .texts p {
+  padding-bottom: 1vmin;
+}
+#section-id .aside-with-text .aside-div .texts .fas  {
+  color: #464646;
+}
+
+ #section-id .aside-with-text .aside-div .texts .map {
+   width: 100%;
+   height: 70vmin;
+}
+
+#section-id .aside-with-text .aside-div .texts a {
+  text-decoration: none;
+  color: red;
+}

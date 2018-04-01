@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- https://www.airbnb.com/experiences/16072?source=p2&currentTab=experience_tab&searchId=2ee739d8-1a25-401d-851c-6000337f8117&federatedSearchId=e78304a8-fada-4c03-9f77-86b636f160ca&sectionId=3beb5235-0e24-4519-861b-4f9eaa5e2819 -->
+    <!-- էս էջի լինքն ա, որը Արտոն էր ուղարկել ։Դ -->
+    <meta charset="utf-8">
+    <title><%= basa.name %></title>
+    <link rel="stylesheet" href="../../css/tour_details/style.css">
+    <link rel="stylesheet" href="../../css/general.css">
+    <link rel="stylesheet" href="../../css/modal.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gafata" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav-bar">
+        <div class="logo">
+          <h2 class="name"><a href="/">TapTap</a></h2>
+        </div>
+        <div class="menu-items">
+          <ul class="list-inline">
+            <li>  <a href="">Become a Local</a> </li>
+            <li>  <a href="">Contact</a> </li>
+            <li>  <a href="">About</a> </li>
+            <li id="sign_in"> <a href="#">Sign In</a> </li>
+          </ul>
+        </div>
+      </div>
+    <div class="parallax" style="background-image: url('../../photos/<%= basa.bgImg %>.jpg');">
+      <div class="parallax-layer">
+        <h1><%= basa.name %></h1>
+        <p><%= basa.tour %></p>
+        <p><%= basa.host %></p>
+        <button id="scrolling">See Dates</button>
+      </div>
+    </div>
+</div>
+    <section id="section-id">
+        <aside class="aside-with-text">
+            <div class="aside-div">
+                  <div class="texts">
+                    <p> <i class="fas fa-map-marker-alt"></i> <span> <a href="#map" id="scrollToMap"> <%= basa.where %></a></span></p>
+                    <p> <i class="fas fa-clock"></i> <span> <%= basa.time %></span></p>
+                    <p> <i class="fas fa-ticket-alt"></i> <span> <%= basa.equipment %></span></p>
+                    <p> <i class="fas fa-comments"></i> <span> <%= basa.language %></span></p>
+                  </div>
+                  <% if( basa.extra ){ %>
+                      <div class="texts">
+                        <p><%= basa.extra.paragraph %></p> <!-- էս էքստրան ա -->
+                      </div>
+                  <% } %>
+                  <div class="texts">
+                    <h3><%= basa.about.header %></h3>
+                    <p><%= basa.about.paragraph %></p>
+                  </div>
+                  <div class="texts">
+                    <h3><%= basa.toDo.header %></h3>
+                    <p><%= basa.toDo.paragraph %></p>
+                  </div>
+                  <div class="texts">
+                    <h3><%= basa.provides.header %></h3>
+                    <% if( basa.provides.paragraph1 ){ %>
+                        <p><%= basa.provides.paragraph1 %></p>
+                    <% } %>
+                    <!-- <blockquote>
+                        <p>One small bottle of water and up to three natural juices are included.</p>
+                    </blockquote> -->
+                    <% if( basa.provides.paragraph2 ){ %>
+                        <p><%= basa.provides.paragraph2 %></p>
+                    <% } %>
+                    <!-- <blockquote>
+                        <p>Entrance fee of 5 dollars is included.</p>
+                    </blockquote> -->
+                    <% if( basa.provides.paragraph2 ){ %>
+                        <p><%= basa.provides.paragraph3 %> </p>
+                    <% } %>
+                  </div>
+                  <div class="texts">
+                    <h3><%= basa.age.header %></h3>
+                    <p><%= basa.age.paragraph %></p>
+                  </div>
+                  <div class="texts">
+                    <h3><%= basa.notes.header %></h3>
+                    <p><%= basa.notes.paragraph %></p>
+                  </div>
+                  <div class="texts">
+                    <h3><%= basa.location.header %></h3>
+                    <p><%= basa.location.paragraph %></p>
+                  </div>
+                  <div class="texts" id="map">
+                      <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d781987.1345269473!2d45.06332055536627!3d40.038877880725096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1522007347093" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </div>
+            </div>
+        </aside>
+    </section>
+  </div>
+  <div class="modal" id="sign_in_modal">
+      <div class="content">
+          <div class="header">
+              <div class="box_name">
+                  Sign In
+              </div>
+          </div>
+          <div class="box_other">
+              <div class="form">
+                  <input type="text" name="" value="" placeholder="Username">
+                  <div class="space"></div>
+                  <input type="password" name="" value="" placeholder="Password">
+                  <div class="space"></div>
+                  <input type="submit" name="" value="Sign In">
+                  <!-- <div class="space"></div> -->
+                  <!-- <a href="" class="fup">Forgot Username / Password?</a> -->
+              </div>
+          </div>
+      </div>
+  </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script type="text/javascript" src="../js/home/script.js"></script>
+      <script type="text/javascript" src="../js/home/func.js"></script>
+      <script type="text/javascript" src="../../js/tour_details/second_page.js"></script>
+  </body>
+</html>
+
+
+
+
+<!--slider for future -->
+
+<!--
+<div class="swiper-container shape_abaj">
+<div class="swiper-wrapper">
+<div class="swiper-slide act_img_abaj">
+<img src='../../img/second_page/img2.jpg' alt="" class="img-responsive">
+</div>
+<div class="swiper-slide act_img_abaj">
+<img src='../../img/second_page/img3.jpg' alt="" class="img-responsive">
+
+</div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+
+-->

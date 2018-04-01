@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="img/logo.png">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/modal.css">
+        <link rel="stylesheet" href="../css/tour_category/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="../js/tour_category/script.js"></script>
+        <script type="text/javascript" src="../js/tour_category/func.js"></script>
+        <title>TapTap Tour Category</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="nav">
+                <div class="logo">
+                    <h1 class="name"><a href="/">TapTap</a></h1>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <a href=""><li>Be a Tour Guide</li></a>
+                        <a href=""><li>Contact</li></a>
+                        <a href=""><li>About</li></a>
+                        <a href="#"><li id="sign_in">Sign In</li></a>
+                    </ul>
+                </div>
+            </div>
+            <header style="background-image: url('../../img/home/img<%= img %>.jpg');">
+                <div class="dark_img">
+                    <div class="Hcontent">
+                        <h1 class="name"><%= basa.name %></h1>
+                        <br/>
+                        <p class="text"><%= basa.text %></p>
+                        <br/>
+                        <!-- <button type="button" class="button" id="BALocal">Become a Local</button> -->
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="view">
+                    <h1>Tours</h1>
+                    <div class="wrap">
+                        <% if( img == 3 ){ %>
+                            <div class="box">
+                                <a href="/details/foods-1">
+                                    <div class="img" style="background-image: url(../../photos/8.jpg)"></div>
+                                    <div class="info">
+                                        Cherry Blossom View & "KANJI"Art Making
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/foods-2">
+                                    <div class="img" style="background-image: url(../../photos/9.jpg)"></div>
+                                    <div class="info">
+                                        Irish Food Trail
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/foods-3">
+                                    <div class="img" style="background-image: url(../../photos/10.jpg)"></div>
+                                    <div class="info">
+                                        Authentic Rooftop Paella
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/foods-4">
+                                    <div class="img" style="background-image: url(../../photos/11.jpg)"></div>
+                                    <div class="info">
+                                        Pasta Maker & Wine Tasting & Dinner
+                                    </div>
+                                </a>
+                            </div>
+                        <% } %>
+                        <% if( img == 1 ){ %>
+                            <div class="box">
+                                <a href="/details/history-1">
+                                    <div class="img" style="background-image: url(../../photos/12.jpg)"></div>
+                                    <div class="info">
+                                        E-bike Tour: Lisbon Essential
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/history-2">
+                                    <div class="img" style="background-image: url(../../photos/16.jpg)"></div>
+                                    <div class="info">
+                                        Discover  Gyumri with   Armen
+                                    </div>
+                                </a>
+                            </div>
+                        <% } %>
+                        <% if( img == 2 ){ %>
+                            <div class="box">
+                                <a href="/details/nature-1">
+                                    <div class="img" style="background-image: url(../../photos/14.jpg)"></div>
+                                    <div class="info">
+                                        Off The Beaten Path Hiking in Madrid!
+                                    </div>
+                                </a>
+                            </div>
+                        <% } %>
+                        <% if( img == 4 ){ %>
+                            <div class="box">
+                                <a href="/details/entertainment-1">
+                                    <div class="img" style="background-image: url(../../photos/1.jpg)"></div>
+                                    <div class="info">
+                                        Pose in the city with a photographer
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-2">
+                                    <div class="img" style="background-image: url(../../photos/2.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        Craft postcards in a family paper shop
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-3">
+                                    <div class="img" style="background-image: url(../../photos/3.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        The Maverick Bikers
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-4">
+                                    <div class="img" style="background-image: url(../../photos/4.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        Bike Expedition
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-5">
+                                    <div class="img" style="background-image: url(../../photos/5.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        Discover the city's party scene
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-6">
+                                    <div class="img" style="background-image: url(../../photos/6.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        Debut Treehouse - Secret Concert
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="box">
+                                <a href="/details/entertainment-7">
+                                    <div class="img" style="background-image: url(../../photos/7.jpg)">
+                                    </div>
+                                    <div class="info">
+                                        Intimate Jazz Trio & Jam session
+                                    </div>
+                                </a>
+                            </div>
+                        <% } %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

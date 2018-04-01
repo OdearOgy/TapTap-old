@@ -1,0 +1,92 @@
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal .content{
+    background-color: #fff;
+    border-radius: 1vmin;
+    width: 40vmin;
+    height: 50vh;
+    position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+    box-shadow: 0px 0px 1.5vmin 1px;
+}
+.modal .content .header{
+    color: #fff;
+    border-radius: 1vmin 1vmin 0 0;
+    background-color: #57b846;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 4vmin;
+    padding-bottom: 4vmin;
+    font-size: 3vmin;
+}
+.modal .content .box_other{
+    padding: 3vmin;
+}
+.modal .content input[type='text'], .modal .content input[type='password']{
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    width: 100%;
+    -webkit-appearance: none;
+    font-family: Ubuntu-Bold;
+    font-size: 2vmin;
+    color: #1b3815;
+    line-height: 1.2;
+    position: relative;
+    display: block;
+    height: 8.25vmin;
+    background-color: #ebebeb;
+    border-radius: 2vmin;
+    padding: 0 3vmin 0 3vmin;
+}
+.modal .content input[type='submit']{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4.5vmin;
+    height: 8vmin;
+    background-color: #57b846;
+    border-radius: 3vmin;
+    outline: none;
+    font-size: 2.25vmin;
+    color: #fff;
+    line-height: 1.2;
+    margin: 0 auto;
+    border: none;
+    transition: .2s all;
+    text-transform: uppercase;
+    font-family: Ubuntu-Bold;
+}
+.modal .content input[type='submit']:hover{
+    background-color: #46a735;
+}
+.modal .content .space{
+    display: block;
+    height: 1.5vmin;
+    width: 100%;
+}
+.modal .content .fup{
+    font-size: 1.5vmin;
+    margin-left: 0.5vmin;
+    text-decoration: none;
+    color: #000;
+}
+.modal .content .fup:hover{
+    text-decoration: underline;
+}
